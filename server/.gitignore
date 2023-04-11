@@ -1,0 +1,11 @@
+# Pastas de dependências
+node_modules/
+dist/
+
+# Arquivos de configuração do ambiente
+.env
+
+# Arquivos temporários e logs
+*.log
+*.tmp
+*.swp
