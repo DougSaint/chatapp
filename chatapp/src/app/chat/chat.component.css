@@ -1,0 +1,80 @@
+.chat-container {
+    max-width: 600px;
+    height: 80vh;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .message-list {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .message, .private-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .message strong, .private-message strong {
+    color: #005aa5;
+  }
+  
+  .private-message {
+    background-color: #e6ffe6;
+  }
+  
+  .private-message strong {
+    color: #1c8800;
+  }
+  
+  .send-message-form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .send-message-form input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .send-message-form button {
+    background-color: #005aa5;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .send-message-form button:hover {
+    background-color: #004a8c;
+  }
+  
+  button.private-message-btn {
+    background-color: #1c8800;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  button.private-message-btn:hover {
+    background-color: #156600;
+  }
+  

@@ -1,0 +1,25 @@
+<form (submit)="register()" class="register-form">
+  <div class="form-group">
+    <label for="registerUsername" class="form-label">Usuário</label>
+    <input
+      type="text"
+      id="registerUsername"
+      [(ngModel)]="username"
+      name="registerUsername"
+      required
+      class="form-input"
+    />
+  </div>
+  <div class="form-group">
+    <label for="registerPassword" class="form-label">Senha</label>
+    <input
+      type="password"
+      id="registerPassword"
+      [(ngModel)]="password"
+      name="registerPassword"
+      required
+      class="form-input"
+    />
+  </div>
+  <button type="submit" class="submit-btn">Registrar</button>
+</form>

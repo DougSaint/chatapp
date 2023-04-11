@@ -1,0 +1,18 @@
+<div class="modal">
+    <div class="modal-content">
+      <h2>Enviar mensagem privada</h2>
+      <form (submit)="sendPrivateMessage()">
+        <div>
+          <label for="recipient">Destinatário:</label>
+          <input type="text" id="recipient" [(ngModel)]="recipient" name="recipient" required />
+        </div>
+        <div>
+          <label for="privateMessage">Mensagem:</label>
+          <textarea id="privateMessage" [(ngModel)]="privateMessageText" name="privateMessage" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+        <button type="button" (click)="closeModal()">Cancelar</button>
+      </form>
+    </div>
+  </div>
+  

@@ -1,0 +1,19 @@
+<div class="chat-container">
+  <button class="private-message-btn" (click)="privateMessageModalVisible = true">Enviar mensagem privada</button>
+  <app-private-message-modal *ngIf="privateMessageModalVisible" #privateMessageModal (privateMessageSent)="sendPrivateMessage($event.recipient, $event.text)" (modalClosed)="privateMessageModalVisible = false"></app-private-message-modal>
+
+  <div class="message-list">
+    <div *ngFor="let message of messages" class="message">
+      <strong>{{ message.username }}:</strong> {{ message.text }}
+    </div>
+
+    <div *ngFor="let privateMessage of privateMessages" class="private-message">
+      <strong>(Privado) {{ privateMessage.sender }} -> {{ privateMessage.recipient }}:</strong> {{ privateMessage.text }}
+    </div>
+  </div>
+
+  <form class="send-message-form" (submit)="sendMessage()">
+    <input type="text" [(ngModel)]="messageText" placeholder="Type your message" name="chat"/>
+    <button type="submit">Send</button>
+  </form>
+</div>
